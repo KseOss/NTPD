@@ -1,4 +1,4 @@
-﻿<Window x:Class="NTPD.MainWindow"
+<Window x:Class="NTPD.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -18,12 +18,39 @@
             </MenuItem>
             <MenuItem Header="Правка">
                 <MenuItem Header="Копировать" Click="Копировать_Click"/>
-                <MenuItem Header="Вырезать" Click="Вырезать_Click"/>
+                <MenuItem Header="Вырезать" Click="Вырезать_Click" />
                 <MenuItem Header="Вставить" Click="Вставить_Click"/>
                 <MenuItem Header="Отменить" Click="Отменить_Click"/>
             </MenuItem>
+            <MenuItem Header="Формат">
+                <MenuItem Header="Размер шрифта">
+                    <MenuItem Header="8" Click="FontSize_Click"/>
+                    <MenuItem Header="12" Click="FontSize_Click"/>
+                    <MenuItem Header="16" Click="FontSize_Click"/>
+                    <MenuItem Header="20" Click="FontSize_Click"/>
+                    <MenuItem Header="24" Click="FontSize_Click"/>
+                    <MenuItem Header="36" Click="FontSize_Click"/>
+                </MenuItem>
+                <MenuItem Header="Шрифт">
+                    <MenuItem Header="Arial" Click="Font_Click"/>
+                    <MenuItem Header="Times New Roman" Click="Font_Click"/>
+                    <MenuItem Header="Liberation Serif" Click="Font_Click"/>
+                </MenuItem>
+                <MenuItem Header="Цвет текста">
+                    <MenuItem Header="Синий" Click="Color_Click"/>
+                    <MenuItem Header="Зелёный" Click="Color_Click"/>
+                    <MenuItem Header="Красный" Click="Color_Click"/>
+                    <MenuItem Header="Жёлтый" Click="Color_Click"/>
+                    <MenuItem Header="Голубой" Click="Color_Click"/>
+                    <MenuItem Header="Фиолетовый" Click="Color_Click"/>
+                    <MenuItem Header="Розовый" Click="Color_Click"/>
+                    <MenuItem Header="Чёрный" Click="Color_Click"/>
+                    <MenuItem Header="Белый" Click="Color_Click"/>
+                </MenuItem>
+            </MenuItem>
             <MenuItem Header="О программе" Click="About_Click"/>
         </Menu>
-        <RichTextBox Name="fieldEdit" KeyDown="FieldEdit_KeyDown" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10,23,10,10"/>
+        
+        <RichTextBox Name="fieldEdit" KeyDown="FieldEdit_KeyDown" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="0,18,0,0"/>
     </Grid>
 </Window>
